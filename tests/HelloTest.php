@@ -17,3 +17,19 @@ class HelloWorldTest extends TestCase
 //        $this->assertEquals('expected result', $result);
     }
 }
+
+class HelloWorldTest2 extends TestCase
+{
+    public function testHelloWorld ()
+    {
+        require('../hello.php');
+        $this->expectOutputString('hola mon');
+    }
+
+    public function testMyFunction() {
+//        include_once 'path/to/script.php';
+//        $result = someFunction();
+//
+//        $this->assertEquals('expected result', $result);
+    }
+}

@@ -26,3 +26,9 @@ function hello($who) {
 }
 
 hello('mon');
+
+function helloworld($who2='hola mon'){
+    if $who2
+}
+
+echo helloworld;
