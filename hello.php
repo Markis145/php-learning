@@ -20,15 +20,15 @@
 
 // WHISFUL THINKING | WISHFUL PROGRAMMING
 
-function hello($who) {
+function hello($who="hola mon") {
     //opcional //parametres opcionals
-    echo 'hola ' . $who;
+    if ($who=='hola mon'){
+        echo $who;
+    }else{
+        echo 'hola ' . $who;
+    }
+
 }
 
 hello('mon');
 
-function helloworld($who2='hola mon'){
-    if $who2
-}
-
-echo helloworld;
