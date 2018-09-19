@@ -20,15 +20,20 @@
 
 // WHISFUL THINKING | WISHFUL PROGRAMMING
 
-function hello($who="hola mon") {
-    //opcional //parametres opcionals
-    if ($who=='hola mon'){
-        echo $who;
-    }else{
-        echo 'hola ' . $who;
-    }
+//function hello($who="hola mon") {
+//    //opcional //parametres opcionals
+//    if ($who=='hola mon'){
+//        echo $who;
+//    }else{
+//        echo 'hola ' . $who;
+//    }
+//
+//}
 
-}
+require 'functions.php';
 
-hello('mon');
 
+hello('pepe');
+
+//WET Write Everything Twice - No
+//DRY Don't Repeat Yourself - si
