@@ -34,6 +34,6 @@ require 'functions.php';
 //    'mobile' => '12358125'
 //];
 
-$greeting=hello('mon');
+$greeting=hello($_GET['greeting']);
 
 require 'views/index.blade.php';
