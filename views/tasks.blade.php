@@ -13,6 +13,7 @@
 <ul>
 <?php
 foreach ($tasks as $task) {
+
     echo "<li>$task</li>";
 }
 
@@ -20,9 +21,18 @@ foreach ($tasks as $task) {
 </ul>
 -->
 
+
 <ul>
     <?php foreach ($tasks as $task) : ?>
-        <li><?= $task; ?></li>
+    <li>
+        <?php if ($task->completed == true): ?>
+        <strike>
+            <?php endif; ?>
+            <?= $task->name; ?>
+            <?php if ($task->completed == true): ?>
+        </strike>
+        <?php endif; ?>
+    </li>
     <?php endforeach;?>
 </ul>
 <h1>Tasks</h1>
