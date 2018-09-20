@@ -11,14 +11,18 @@
 <!--ul>li*5-->
 <!--
 <ul>
-<?php
-foreach ($tasks as $task) {
-
-    echo "<li>$task</li>";
-}
-
-?>
-</ul>
+@foreach ($tasks as $task)
+    <li>
+@if ($task->completed == true)
+        <strike>
+@endif
+    {{ $task->name }}
+    @if ($task->completed == true)
+        </strike>
+@endif
+            </li>
+@endforeach
+        </ul>
 -->
 
 

@@ -15,5 +15,4 @@ $tasks = [
     new Task('fer el llit', false ),
     ];
 
-
 require 'views/tasks.blade.php';
