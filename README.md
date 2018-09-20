@@ -25,3 +25,5 @@ PROTOCOL MISSATGES (TIPUS/METHODS)
 - POST
 - DELETE
 - PUST
+
+sudo cat /etc/mysql/debian.cnf

@@ -35,5 +35,17 @@ require 'functions.php';
 
 hello('pepe');
 
+//echo 'hola mon'; //sempre que podem escollir farem cometes simples
+//echo "hola mon";
+//greeting = 'pepe';
+//echo 'hola ' . $greeting;
+//echo "hola $greeting"; //hola pepe
+//echo 'hola $greeting'; //hola $greeting
+
+//echo ${greeting};
+//
+//echo "hello$greetingProva"; //error variable $greetingProva not found
+//echo "hello${greeting}Prova"; //helloPepeProva
+
 //WET Write Everything Twice - No
 //DRY Don't Repeat Yourself - si
