@@ -9,10 +9,32 @@ require 'models/Task.php';
 //$task3=['name' => 'fer el llit', 'completed' => true];
 //$tasks=[$task1,$task2,$task3];
 
-$tasks = [
-    new Task('Comprar pa', false ),
-    new Task('Comprar llet', true ),
-    new Task('fer el llit', false ),
-    ];
+
+require 'framework/database/connect.php';
+
+$pdo=connect();
+$tasks=fetchAll('tasks');
+
+//try {
+//    $pdo = new PDO('mysql:host=127.0.0.1;dbname=php_learning','debian-sys-maint','BSjmuIoMvRww9AMl');
+//} catch (\PDOException $e){
+//    die('Could not connect');
+//}
+
+//Consulta SQL -> STATEMENT SQL
+$statement = $pdo->prepare('SELECT * FROM tasks;');
+$statement->execute();
+
+//$results = $statement->fetchAll(PDO::FETCH_CLASS,Task::class);
+
+
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS);
+
+
+//$tasks = [
+//    new Task('Comprar pa', false ),
+//    new Task('Comprar llet', true ),
+//    new Task('fer el llit', false ),
+//];
 
 require 'views/tasks.blade.php';

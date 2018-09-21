@@ -25,22 +25,15 @@
         </ul>
 -->
 
-
 <ul>
-    <?php foreach ($tasks as $task) : ?>
+    <?php foreach ($people as $person) : ?>
     <li>
-        <?php if ($task->completed == true): ?>
-        <strike>
-            <?php endif; ?>
-            <?= $task->name; ?>
-            <?php if ($task->completed == true): ?>
-        </strike>
-        <?php endif; ?>
+        <?= $person->name; ?>
+        <?= $person->dni; ?>
+        <?= $person->height; ?>
     </li>
     <?php endforeach;?>
 </ul>
-
-
 
 
 </body>
