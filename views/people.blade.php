@@ -28,9 +28,9 @@
 <ul>
     <?php foreach ($people as $person) : ?>
     <li>
-        <?= $person->name; ?>
-        <?= $person->dni; ?>
-        <?= $person->height; ?>
+        Nom: <?= $person->name; ?>
+        | Dni: <?= $person->dni; ?>
+        | Altura: <?= $person->height; ?>
     </li>
     <?php endforeach;?>
 </ul>
