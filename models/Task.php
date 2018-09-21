@@ -22,4 +22,10 @@ class Task
     {
         $this->completed = true;
     }
+
+    public static function all()
+    {
+        $pdo = Connection::connect();
+        return QueryBuilder::fetchAll($pdo,'tasks');
+    }
 }

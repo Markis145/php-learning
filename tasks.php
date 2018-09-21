@@ -1,13 +1,6 @@
 <?php
 
+require 'framework/bootstrap.php';
 require 'models/Task.php';
-require 'framework/database/Connection.php';
-require 'framework/database/QueryBuilder.php';
-
-//new Task();
-
-//estatiques
-$pdo = Connection::connect();
-$tasks = QueryBuilder::fetchAll($pdo,'tasks');
-
+$tasks = Task::all();
 require 'views/tasks.blade.php';

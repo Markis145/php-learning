@@ -27,3 +27,6 @@ PROTOCOL MISSATGES (TIPUS/METHODS)
 - PUST
 
 sudo cat /etc/mysql/debian.cnf
+
+posar password en un fitxer config, que no es vegi la password al fitxer connection.php
+indicar que el fitxer config no es munti al github amb el .ignore
