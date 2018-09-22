@@ -20,9 +20,14 @@ class Person
         $this->height = $height;
     }
 
+//    public static function all()
+//    {
+//        $pdo = Connection::connect();
+//        return QueryBuilder::fetchAll($pdo,'people');
+//    }
     public static function all()
     {
         $pdo = Connection::connect();
-        return QueryBuilder::fetchAll($pdo,'people');
+        return QueryBuilder::fetchAll($pdo,'People');
     }
 }

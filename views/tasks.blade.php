@@ -9,22 +9,6 @@
 </head>
 <body>
 <!--ul>li*5-->
-<!--
-<ul>
-@foreach ($tasks as $task)
-    <li>
-@if ($task->completed == true)
-        <strike>
-@endif
-    {{ $task->name }}
-    @if ($task->completed == true)
-        </strike>
-@endif
-            </li>
-@endforeach
-        </ul>
--->
-
 
 <ul>
     <?php foreach ($tasks as $task) : ?>
@@ -39,9 +23,6 @@
     </li>
     <?php endforeach;?>
 </ul>
-
-
-
 
 </body>
 </html>
