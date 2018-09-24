@@ -1,38 +1,26 @@
 <?php
 
-//var_dump($_GET);
-//die();
+require 'vendor/autoload.php';
+//$database =
+require 'framework/bootstrap.php';
 
-//String -> $greeting='Hola';
-//Booleans -> $x = true/false;
-//Enter -> $num = 15;
+//FC --> Front Controller -> un sol fitxer PHP (index.php) executa tota l'aplicació
+// Sempre s'executa primer index.php
 
-//Array/Vector
+// URI
+// tasks --> require 'views/tasks.blade.php'
+// people --> require 'views/people.blade.php'
+// ROUTER per URI
 
-//$fruites = array();
-//$fruites = [];
 
-//Normal array
-//$str = 'platan';
-//$str1 = 'presec';
-//$str2 = 'taroja';
-//
-//$fruites = [$str, $str1, $str2];
-//
-//echo $fruites[0];
-//die();
 
-//Array associatiu
+//Dos opcions:
+// - Funció global
+//var_dump()
+//require direct($_SERVER['REQUEST_URI']);
+require Router::direct($_SERVER['REQUEST_URI']);
+// - Mètode dins d'una classe (funció dins d'una classe el seu nom tècnic es mètode)
+//$router = new Router();
+//require $router ->direct($uri);
 
-//$person="Marc Mestre Alguero";
-
-//$person = [
-//    'name' => 'Marc Mestre Alguero',
-//    'dni' => '123123123K',
-//    'mobile' => '12358125'
-//];
-require 'functions.php';
-
-$greeting=hello($_GET['greeting']);
-
-require 'views/index.blade.php';
+//require Route::direct($uri);

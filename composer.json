@@ -1,5 +1,21 @@
 {
+    "name": "marcmestre/php-learning",
+    "description": "bla",
+    "authors": [
+        {
+            "name": "Markis145",
+            "email": "marc_mstr@hotmail.com"
+        }
+    ],
     "require": {
         "phpunit/phpunit": "^7.3"
+    },
+    "autoload": {
+        "classmap":[
+            "./"
+        ],
+        "files" : [
+            "./helpers.php"
+            ]
     }
 }
