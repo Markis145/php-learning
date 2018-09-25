@@ -36,7 +36,7 @@
                 </v-list-tile>
                 <v-list-tile href="/lessons">
                     <v-list-tile-action>
-                        <v-icon>contact_mail</v-icon>
+                        <v-icon>assignment</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Lliçons</v-list-tile-title>
@@ -44,7 +44,7 @@
                 </v-list-tile>
                 <v-list-tile href="/contact">
                     <v-list-tile-action>
-                        <v-icon>contact_mail</v-icon>
+                        <v-icon>person</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Contact</v-list-tile-title>
@@ -52,7 +52,7 @@
                 </v-list-tile>
                 <v-list-tile href="/about">
                     <v-list-tile-action>
-                        <v-icon>contact_mail</v-icon>
+                        <v-icon>info</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>About</v-list-tile-title>
