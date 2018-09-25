@@ -19,9 +19,13 @@ require 'framework/bootstrap.php';
 //var_dump()
 require direct($_SERVER['REQUEST_URI']);
 
+//$router = new Router();
 //require Router::direct($_SERVER['REQUEST_URI']);
+
 // - Mètode dins d'una classe (funció dins d'una classe el seu nom tècnic es mètode)
 //$router = new Router();
 //require $router ->direct($uri);
 
 //require Route::direct($uri);
+
+//MVC: model vista controlador -> Paradigma / patró disseny
