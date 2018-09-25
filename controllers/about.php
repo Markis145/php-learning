@@ -6,4 +6,6 @@
  * Time: 20:07
  */
 
-require '../views/about.blade.php';
+//require '../views/about.blade.php';
+
+require view('about');

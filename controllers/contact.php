@@ -6,4 +6,6 @@
  * Time: 20:07
  */
 
-require '../views/contact.blade.php';
+//require '../views/contact.blade.php';
+
+require view('contact');

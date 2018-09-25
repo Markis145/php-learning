@@ -7,5 +7,5 @@
 //
 $people = Person::all();
 //$tasks = $database->selectAll('tasks');
-require view('people',$people);
+require view('people');
 //require 'views/tasks.blade.php';

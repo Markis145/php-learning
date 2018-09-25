@@ -7,5 +7,5 @@
 //
 $lessons = Lesson::all();
 //$tasks = $database->selectAll('tasks');
-require view('lessons',$lessons);
+require view('lessons');
 //require 'views/tasks.blade.php';
