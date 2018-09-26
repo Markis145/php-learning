@@ -4,7 +4,7 @@
     <v-toolbar color="cyan" dark>
         <v-toolbar-side-icon></v-toolbar-side-icon>
 
-        <v-toolbar-title>Persones</v-toolbar-title>
+        <v-toolbar-title>Lliçons</v-toolbar-title>
 
         <v-spacer></v-spacer>
 

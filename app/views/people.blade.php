@@ -26,13 +26,15 @@
         <v-list-tile>
 
             <v-list-tile-avatar>
-                <img src="https://placeimg.com/100/100/any">
+                <img src="https://2static.fjcdn.com/pictures/Derp+cat_9720f6_6005436.jpg">
             </v-list-tile-avatar>
 
             <v-list-tile-content>
                 <v-list-tile-title>
                     <?= $person->name; ?>
+                </v-list-tile-title>
                     <?= $person->dni; ?>
+                <v-list-tile-title>
                     <?= $person->height; ?>
                 </v-list-tile-title>
             </v-list-tile-content>
