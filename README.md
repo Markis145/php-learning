@@ -28,5 +28,14 @@ PROTOCOL MISSATGES (TIPUS/METHODS)
 
 sudo cat /etc/mysql/debian.cnf
 
-posar password en un fitxer config, que no es vegi la password al fitxer connection.php
-indicar que el fitxer config no es munti al github amb el .ignore
+- Refactorització de control·ladors: en comptes de fitxers utilitzar classes
+    - https://laracasts.com/series/php-for-beginners/episodes/23
+- Utilitzar a totes les classes l'espai de noms (namespace) App
+    - https://laracasts.com/series/php-for-beginners/episodes/24
+- Crear un formulari per afegir tasques (només preguntar nom)
+    - https://laracasts.com/series/php-for-beginners/episodes/20
+    - Inserts a la base de dades
+    - OCO: cal canviar router i routes per acceptar GET i POST
+    
+Solució final: 
+https://github.com/laracasts/The-PHP-Practitioner-Full-Source-Code
