@@ -1,10 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marcmestre
- * Date: 1/10/18
- * Time: 15:01
- */
+
+namespace App\Controllers;
+
+use App\Models\Lesson;
+use App\Models\Person;
+use App\Models\Task;
 
 class PagesController
 {

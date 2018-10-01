@@ -1,7 +1,7 @@
 <?php
 
-//require 'config.php';
-//$config = require 'config.php';
+namespace App\Framework;
+
 require 'database/Connection.php';
 require 'database/QueryBuilder.php';
 

@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marcmestre
- * Date: 26/09/18
- * Time: 16:36
- */
+
+namespace App\Framework;
 
 class App {
 

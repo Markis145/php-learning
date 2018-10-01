@@ -1,4 +1,9 @@
 <?php
+
+namespace App\Models;
+use Connection;
+use QueryBuilder;
+
 class Lesson
 {
     // PROPIETATS
