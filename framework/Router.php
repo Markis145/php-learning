@@ -1,21 +1,34 @@
 <?php
 class Router
 {
-    private static $routes = [];
-    public static function routes()
+    public static $routes = [];
+
+    public function routes()
     {
         return self::$routes;
     }
-    public static function define($routes)
+    public function define($routes)
     {
         self::$routes= $routes;
     }
-    public static function direct($uri = null)
+    public static function direct($uri, $requestType)
     {
-        if (!$uri) return '/app/controllers/tasks.php';
-        //      NO ESTATIC  $this->routes; STATIC self::$routes
-        if (array_key_exists($uri,self::$routes)) return self::$routes[$uri];
-        throw new Exception('La pàgina que demaneu no existeix');
+        if (array_key_exists($uri, self::$routes[$requestType])) {
+            return self::callAction(
+                ...explode('@', self::$routes[$requestType][$uri]['controller'])
+            );
+        }
+        throw new Exception('Ruta no definida per a esta URI.');
+    }
+
+    protected static function callAction($controller, $action)
+    {
+        if (! method_exists($controller, $action)){
+            throw new Exception(
+                "El {$controller} no respon a l'acció {$action}"
+            );
+        }
+        return (new $controller)->$action();
     }
 
     public function execute($controller,$method)

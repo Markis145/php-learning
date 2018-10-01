@@ -1,10 +1,8 @@
 <?php
 
 require 'vendor/autoload.php';
-//$database =
 require 'framework/bootstrap.php';
 
-require Router::direct($_SERVER['REQUEST_URI']);
-
+Router::direct($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 
 //MVC: model vista controlador -> Paradigma / patró disseny
