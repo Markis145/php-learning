@@ -21,7 +21,7 @@ class Router
                 ...explode('@', self::$routes[$requestType][$uri]['controller'])
             );
         }
-        throw new Exception('Ruta no definida per a esta URI.');
+        throw new \Exception('Ruta no definida per a esta URI.');
     }
 
     protected static function callAction($controller, $action)
@@ -30,11 +30,15 @@ class Router
         $controller = new $controller;
 
         if (! method_exists($controller, $action)){
-            throw new Exception(
+            throw new \Exception(
                 "El {$controller} no respon a l'acció {$action}"
             );
         }
         return (new $controller)->$action();
+    }
+
+    static function redirect($uri = '/'){
+        header('Location: '.$uri);
     }
 
     public function execute($controller,$method)

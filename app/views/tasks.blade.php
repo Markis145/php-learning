@@ -19,6 +19,11 @@
         </v-subheader>
 
         <v-divider></v-divider>
+        <form action="/tasks" method="post">
+
+            Tasca: <input type="text" name="name" required>
+            <button type="submit">Afegir</button>
+        </form>
 
         <?php foreach ($tasks as $task) : ?>
 

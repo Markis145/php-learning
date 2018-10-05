@@ -32,4 +32,9 @@ class Task
         $pdo = Connection::connect();
         return QueryBuilder::fetchAll($pdo,'tasks');
     }
+
+    static function create($table, $cols){
+        $pdo = Connection::connect();
+        QueryBuilder::insert($pdo,$table,$cols);
+    }
 }
